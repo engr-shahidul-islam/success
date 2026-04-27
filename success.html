@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>সফল লগইন - গ্রিন সিটি নেট</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Hind+Siliguri:wght@400;700&display=swap');
+       body { font-family: 'Hind Siliguri', sans-serif; background-color: #f8fafc; }
+       .figma-card { width: 100%; max-width: 420px; background: #fff; border-radius: 32px; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05); }
+   </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+   <div class="figma-card p-10 text-center mx-4">
+       <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+           <i class="fas fa-check text-emerald-600 text-3xl"></i>
+       </div>
+       <h1 class="text-2xl font-bold text-slate-800">অভিনন্দন!</h1>
+       <p class="text-slate-500 mt-4">আপনার কানেকশন এখন সফল। আপনি উচ্চগতির ইন্টারনেট উপভোগ করতে পারেন।</p>
+       <div class="mt-8 p-4 bg-slate-50 rounded-2xl border border-slate-100">
+           <p class="text-[10px] uppercase font-bold text-slate-400">অটোমেটিক রিডাইরেক্ট</p>
+           <p class="text-xs text-slate-600">৫ সেকেন্ডের মধ্যে মূল পেজে নিয়ে যাওয়া হবে...</p>
+       </div>
+       <div class="mt-8 pt-6 border-t border-dashed border-slate-200">
+           <p class="text-[10px] text-slate-400 uppercase">সহায়তার জন্য কল করুন</p>
+           <a href="tel:01864899822" class="text-xl font-extrabold text-red-500">০১৮৬৪৮৯৯৮২২</a>
+       </div>
+   </div>
+   <script>
+       const urlParams = new URLSearchParams(window.location.search);
+       const target = urlParams.get('target') || "https://www.google.com";
+       setTimeout(() => { window.location.href = target; }, 5000);
+   </script>
+</body>
+</html>
